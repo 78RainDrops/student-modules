@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .title_1 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+        .question {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        ol {
+            list-style-type:decimal; /* Removes default list numbering */
+            padding-left: 30px;
+        }
+
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .imagez{
+            display: flex;
+            gap: 10px;
+            width: calc(50% - 5px);
+        }
+        @media (max-width: 768px){
+            .imagez{
+                flex-direction: row;
+                align-items: center;
+            }
+            .imagez img {
+                width: 100%; /* Each image uses full width when stacked */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title_1">
+        <h2>UNIT 2</h2>
+    </div>
+    <div class="container">
+        <h2 style="text-align: center;"><u>Configuring the BIOS</u></h2>
+        <div class="content">
+            <h1 style="text-align: center;">INTRODUCTION</h1>
+            <p style="text-align: justify;">The BIOS (pronounced as <i>"bay-os"</i>) or the <strong>basic input/output system</strong> of the computer, is responsible in making sure that all the other chips, hard drives, ports, and the CPU function together. </p>
+            <br>
+            <p>The BIOS basically sets up your computer -- it loads your drivers and boots the operating system.</p>
+
+        </div>
+        <h2 style="text-align: center;">Understanding the BIOS</h2>
+        <div class="content">
+            <p style="text-align: justify;">The <strong>BIOS</strong> is a software usually built onto the motherboard that shows the major hardware components of your computer with the operating system. 
+            </p>
+            <p>
+                It is usually stored on a Flash memory chip on the motherboard, but sometimes  the chip is another type of ROM.
+            </p>
+            <ol>
+                <caption><strong>When you turn on your computer, the BIOS does several things. The sequence is as follows:</strong></caption>
+                <li>
+                    Check the CMOS Setup for custom settings
+                </li>
+                <li>
+                    Load the interrupt handlers and device drivers
+                </li>
+                <li>
+                    Initialize registers and power management
+                </li>
+                <li>
+                    Perform the power-on self-test (POST)
+                </li>
+                <li>
+                    Display system settings
+                </li>
+                <li>
+                    Determine which devices are bootable
+                </li>
+                <li>
+                    Initiate the bootstrap sequence
+                </li>
+            </ol>
+
+            <p>
+                <i>
+                    By default, the first boot of the newly installed computer is on the hard disk--may it be on a laptop or a desktop computer. When installing an operating system, the BIOS should be configured to set the system to boot on the operating system to be installed. It should boot first on the USB installer.
+                </i>
+            </p>
+        </div>
+        <h2 style="text-align: center;">Running the BIOS</h2>
+        <div class="content">
+            <p style="text-align: justify;">Upon turning the computer on, press the keys that would run Setup. On most computers, it would be keys: ESC, DEL, F1, F2, F12, Ctrl-Esc, or Ctrl-Alt-Esc to enter setup. There is usually a line of text at the bottom of the display that tells you "Press ___ to Enter Setup."
+            </p>
+            <br>
+            <p style="text-align: justify;">BIOS setup would depend on the motherboard manufacturer. However, these are the common, standard options you may see in the BIOS setup: <br>
+                If you would like to boot from a certain device, say a USB Flash Drive to install an Operating System (which we will demonstrate later), click advanced set-up and look for the first, second, and third boot device.
+            </p>
+            <br>
+            <p style="text-align: justify;">Select first boot device. By default, it would be the hard drive on the installed computer.
+                <br>
+                Make sure to choose <i>"Save Changes"</i> when you are changing settings in the BIOS. Afterwards, this will restart the computer, so the new settings take effect.       
+            </p>
+            <dl style="text-align: justify;">
+                <dd><strong>System Time/Date</strong> - Set the system time and date</dd>
+                <dd><strong>Boot Sequence</strong> - The order that BIOS will try to load the operating system</dd>
+                <dd><strong>Plug and Play</strong> - A standard for auto-detecting connected devices; should be set to "Yes" if your computer and operating system both support it</dd>
+                <dd><strong>Mouse/Keyboard</strong> - "Enable Num Lock," "Enable the Keyboard," "Auto-Detect Mouse"...</dd>
+                <dd><strong>Drive Configuration</strong> - Configure hard drives, CD-ROM and floppy drives</dd>
+                <dd><strong>Memory</strong> - Direct the BIOS to shadow to a specific memory address</dd>
+                <dd><strong>Security</strong> - Set a password for accessing the computer</dd>
+                <dd><strong>Power Management</strong> - Select whether to use power management, as well as set the amount of time for standby and suspend</dd>
+                <dd><strong>Exit</strong> - Save your changes, discard your changes or restore default settings</dd>
+            </dl>
+        </div>
+        <h2 style="text-align: center;">Creating a Bootable Device</h2>
+        <div class="content">
+            <h2>WHY IS BOOTING REQUIRED?</h2>
+            <p style="text-align: justify;">Hardware does not know where the operating system resides and how to load it. <br>
+                Need a special program to do this job – Bootstrap loader. <br>
+                (e.g. BIOS – Boot Input Output System) <br>
+                Bootstrap loader locates the kernel, loads it into main memory and starts its execution. <br>
+                In some systems, a simple bootstrap loader fetches a more complex boot program from disk, which in turn loads the kernel. <br>
+                <strong>Booting</strong> is a startup sequence that launches the operating system of a computer when it is turned on. <br>
+                A <strong>boot sequence</strong> is the initial set of operations that the computer performs when it is switched on. Every computer has a boot sequence.
+                A <strong>boot device</strong> is any device or drive that has the required boot files that allows the computer to start. <br>
+                <i>In this case, if we are building a PC from scratch, usually there is still no operating system. With this, an operating system can be booted or installed from a boot device.</i> <br>
+                A <strong>boot drive</strong> commonly used is the <strong>hard drive</strong>. Usually, an operating system like Microsoft Windows is installed in a hard drive to load Windows. <br>
+                Using a third-party application (Rufus), scroll the demonstration slides below to see the step-by-step process on creating a bootable USB device. <br>
+                <dl>
+                    <dd>
+                        <img src="images/img9.jpg" alt="img9">
+                    </dd>
+                    <dd>
+                        <img src="images/img10.jpg" alt="im10">
+                    </dd>
+                    <dd>
+                        <div class="imagez">
+                            <img src="images/img11.jpg" alt="img11">
+                            <img src="images/img12.jpg" alt="img12">
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="imagez">
+                            <img src="images/img13.jpg" alt="img13">
+                            <img src="images/img14.jpg" alt="img14">
+                        </div>
+                    </dd>
+                    <dd>
+                        <div>
+                            <img src="images/img15.jpg" alt="img15">
+                        </div>
+                    </dd>
+                    <dd>
+                        <div>
+                            <img src="images/img16.jpg" alt="img16">
+                        </div>
+                    </dd>
+                    <dd>
+                        <div>
+                            <img src="images/img17.jpg" alt="img17">
+                        </div>
+                    </dd>
+                </dl>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

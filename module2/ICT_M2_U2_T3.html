@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .title_1 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+        .question {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        ol {
+            list-style-type:decimal; /* Removes default list numbering */
+            padding-left: 30px;
+        }
+
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .imagez{
+            display: flex;
+            gap: 10px;
+            width: calc(50% - 5px);
+        }
+        @media (max-width: 768px){
+            .imagez{
+                flex-direction: row;
+                align-items: center;
+            }
+            .imagez img {
+                width: 100%; /* Each image uses full width when stacked */
+            }
+        }
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;"><u>Conducting Tests</u></h2>
+        <div class="content">
+            <p><i>After installing hardware and software, it is important that we make sure that the computer runs perfectly.</i></p>
+            <p>Testing the computer through stress tests is a good example to check if there are remaining issues in the computer. There are procedures such as gathering test information, validating, and responding to these may help in making sure that everything runs smoothly.
+            </p>
+            <p style="border: 1px solid; width: 100%;"></p>
+            <p>Make sure that you have reviewed the use of <strong>diagnostic tools</strong> before proceeding to this lesson.</p>
+        </div>
+        <h2 style="text-align: center;">Software Tools/Disk Management Tools</h2>
+        <div class="content">
+            <p>
+                The following are different disk management tools and procedures that can optimize a PC to its full performance as well as check errors/issues along the way.
+            </p>
+            <p style="border: 1px solid; width: 100%;"></p>
+            <h4>fDisk</h4>
+            <p>A command-line tool that creates and deletes partitions on a hard drive. It is available from Windows 2002 onwards. For newer units (from Windows XP onwards) the disk management tool is used.</p>
+            <img src="images/img49.png" alt="img49">
+            <h4>Disk Management Tool </h4>
+            <p>This is used to manage disks and drives (like internal and external hard drives), create partitions, and format devices. This is used on newer versions of Microsoft Windows.</p>
+            <img src="images/img50.png" alt="img50">
+            <h4>Format </h4>
+            <p>It is the process of preparing a data storage device (i.e. hard drive, USB drive, solid-state drive) to store information.</p>
+            <img src="images/img51.png" alt="img51">
+            <h4>ScanDisk or CHKDSK </h4>
+            <p>Used to check integrity of files and folders in your unit. This can also be used to check the disk surface for physical errors.</p>
+            <img src="images/img52.png" alt="img52">
+            <h4>Defrag </h4>
+            <p>It optimizes space on hard drive and allow faster access to programs and data.</p>
+            <img src="images/img53.png" alt="img53">
+            <img src="images/img54.png" alt="img54">
+            <h4>Disk Cleanup </h4>
+            <p>A software utility for Windows that lets users remove files and speed up computer performance. </p>
+            <h4>System File Checker (SFC) </h4>
+            <p>A tool in Microsoft Windows that allows users to scan and restore corrupt Windows system files. This is available in Windows 98 and later.</p>
+        </div>
+        <h2 style="text-align: center;">Testing Procedures</h2>
+        <div class="content">
+            <ul>
+                <caption><strong>This is the basic testing procedure you will follow throughout.</strong></caption>
+                <li>Gathering test information. </li>
+                <li>Validating test information.</li>
+                <li>Responding to rest information. </li>
+                <li>Checking specification.</li>
+            </ul>
+        </div>
+        <h2 style="text-align: center;">Observing the Boot Routine</h2>
+        <div class="content">
+            <ol>
+                <li>
+                    If you have turned off the computer, power it on including all peripherals and devices                    
+                </li>
+                <li>
+                    Examine the power supply fan. <br>
+                    <i>Is the fan running normally?</i>
+                    <dd>> If <strong>YES</strong>, proceed to Step 3.</dd>
+                    <dd>> If <strong>NOT</strong>, troubleshoot the system power.</dd>
+                </li>
+                <li>
+                    Watch the NUM LOCK, CAPS LOCK, and SCROLL LOCK keys light in the keyboard. <br>
+                    Before performing Internal Visual Inspection, make sure that all open files were saved and running application programs were closed.
+                </li>
+            </ol>
+            <p style="border: 1px solid; width: 100%;"></p>
+            <ol>
+                <li>Like in conducting external visual inspection, make sure that you have turned off the computer including its devices and peripherals. Disconnect all power cables and electrical outlets.</li>
+                <li>Remove the computer’s right-side cover.</li>
+                <li>Examine whether all chips, expansion cards, and SEC cartridge and heat sink assembly or assemblies are fully seated in their sockets or connectors.</li>
+                <li>To ensure that chips are fully seated in their sockets, press firmly on the top of each chip.</li>
+                <li>Check whether all jumpers are set correctly.</li>
+                <li>Check whether all cable connectors inside the computer to verify that they are firmly attached to its right connection.</li>
+                <li>Reinstall the computer cover. <br>
+                    <i>Reconnect the computer and any attached peripherals to their power sources, and turn them on.</i>
+                </li>
+            </ol>
+        </div>
+        <h2 style="text-align: center;">Conducting Stress Test</h2>
+        <div class="content">
+            <dd><strong>Stress testing</strong> is a form of software testing that determines a system’s stability, availability, and reliability. </dd>
+            <dd>It is used to determine the <strong>speed</strong> and <strong>effectiveness</strong> of a computer, network, software, or device.</dd>
+            <dd><strong>Performance testing</strong> is checking the software whether it can cope up with the current system performance.</dd>
+            <img src="images/img56.png" alt="img56">
+            <ol>
+                <caption>You can conduct stress test by monitoring your computer performance through the Task Manager (Just press CTRL + ALT + DEL keys to launch the Task Manager).</caption>
+                <li>Close all open programs and launch the Task Manager.</li>
+                <li>Select "Performance" from the tabs.</li>
+                <li>Open as many applications as you can or perform many tasks.</li>
+                <li>Observe the computer's CPU Usage and Memory. <br>
+                    The more RAM you have, the smoother it is to access programs.
+                    </li>
+            </ol>
+        </div>
+        
+    </div>
+</body>
+</html>
