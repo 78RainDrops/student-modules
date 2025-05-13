@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 40px;
+        }
+        .title_1 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+        .question {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        ol {
+            list-style-type:decimal; /* Removes default list numbering */
+            padding-left: 30px;
+            text-align: justify;
+        }
+        ul{
+            
+            padding-left: 30px;
+            text-align: justify;
+        }
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        p{
+            text-align: justify;
+        }
+        .responsive-video {
+            width: 100%;
+            height: auto;
+            max-width: 650px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px; /* optional */
+        }
+        .imagez{
+            display: flex;
+            gap: 10px;
+            width: calc(50% - 5px);
+        }
+        @media (max-width: 768px){
+            .imagez{
+                flex-direction: row;
+                align-items: center;
+            }
+            .imagez img {
+                width: 100%; /* Each image uses full width when stacked */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;"><u>Inspect and Test Networks</u></h2>
+        <div class="content">
+            <h1 style="text-align: center;">INTRODUCTION</h1>
+            <p>
+                It is important to test computer networks to assure that these networks will be effective, especially in the long run.             
+            </p>
+            <p>
+                Aside from ensuring that these networks are secure, it is essential that we know in the first place that they are working correctly to avoid issues in the future.            
+            </p>
+        </div>
+        <h2 style="text-align: center;">Network Testing</h2>
+            <div class="content">
+                <p>
+                    Network Testing is the actual measurement of the network's state of operation over a period. This record will be the basis for comparison or control.
+                </p>
+                <p>
+                    It is often called understanding the past to predict the future.
+                </p>
+                <p>
+                    A good network testing strategy is one where the network manager can predict the operation of the network. 
+                </p>
+                <p>
+                    Testing the reliability and its ability to support new applications and users are among the list of factors in examining a good network.
+                </p>
+            </div>
+        <h2 style="text-align: center;">Important Network Characteristics</h2>
+            <div class="content">
+                <p>
+                    Through a comprehensive network test, the network manager can maintain a network actively. When it is implemented properly, it is <strong>easy to track the changes and trends</strong> that can be seen in its daily operation. 
+                </p>
+                <p>
+                    From here, a network manager is able to obtain valuable insight where s/he may use for further improvements and troubleshooting.
+                </p>
+                <p style="border: 1px solid; width: 100%;"></p>
+                <dl>
+                    <dt>
+                        <i>
+                            We should look for the following when we are testing the network:
+                        </i>
+                    </dt>
+                    <dd>(1) Utilization levels</dd>
+                    <dd>(2) Number of users</dd>
+                    <dd>(3) Number of operational protocols</dd>
+                    <dd>(4) Error statistics</dd>
+                    <dd>(5) Application utilization</dd>
+                </dl>
+            </div>
+        <h2 style="text-align: center;">Final Testing</h2>
+            <div class="content">
+                <p>
+                    Final testing aims to test the hardware and software aspect of the systems and the network.                
+                </p>
+                <dl>
+                    <dt>
+                        <i>Follow the following steps.</i>
+                    </dt>
+                    <dd>
+                        (1) Launch cmd by CTRL+R, typing cmd, then press enter.    
+                    </dd>
+                    <dd>
+                        (2) Type ping and the IP address of a comptuer in the network. If the timeout does not request, it means that the computer is connected to the network.
+                    </dd>
+                    <dd>
+                        (3) You can log-on to the network as well by accessing your network device. Observe the color of the NIC on the computer; the light should be green or yellow and has one solid and a blinking light.
+                    </dd>
+                </dl>
+                
+            </div>
+        <h2 style="text-align: center;">Generating Reports</h2>
+            <div class="content">
+                <p>
+                    Network testing will essentially need documentation and reports from the computer. This is important since this will be used for maintenance.                
+                </p>
+                <p>
+                    The following steps may require you to be an Administrator to access some of the features in this procedure.
+                </p>
+                <p style="border: 1px solid; width: 100%;"></p>
+                <dl>
+                    <dt>
+                        To enable diagnostic logging,
+                    </dt>
+                    <dd>
+                        (1) Open the Network Connections folder and view the available connections.
+                    </dd>
+                    <dd>
+                        (2) Press ALT to display the menu bar, then access Advanced, click <i>Remote Access Preferences</i>.
+                    </dd>
+                    <dd>
+                        <dt>(3) Access Diagnostics, you can do one or more of the following:</dt>
+                        <dd>
+                            a) You can enable logging for all remote access connections. Select <strong>Enable logging</strong>. Then click <strong>Generate Report</strong>.                            
+                        </dd>
+                        <dd>
+                            b) You can clear logs that were created during previous connection attempts. Select <strong>Clear Log</strong>. Then click <strong>Generate Report</strong>.
+                        </dd>
+                        <dd>
+                            To view this report, click <strong>View Report</strong>.                         
+                        </dd>
+                        <dd>
+                            To save it to a file, click <strong>Save report to this file</strong>. 
+                        </dd>
+                        <dd>
+                            To send report to an e-mail address, click <strong>Send report to this e-mail address</strong>. 
+                        </dd>
+                        <dd>
+                            To generate a more concise report, click <strong>Generate summary report</strong>.
+                        </dd>
+                    </dd>
+                </dl>
+                
+            </div>
+        
+    
+    </div>   
+</body>
+</html>

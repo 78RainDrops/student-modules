@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 40px;
+        }
+        .title_1 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+        .question {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        ol {
+            list-style-type:decimal; /* Removes default list numbering */
+            padding-left: 30px;
+            text-align: justify;
+        }
+        ul{
+            
+            padding-left: 30px;
+            text-align: justify;
+        }
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        p{
+            text-align: justify;
+        }
+        .responsive-video {
+            width: 100%;
+            height: auto;
+            max-width: 650px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px; /* optional */
+        }
+        .imagez{
+            display: flex;
+            gap: 10px;
+            width: calc(50% - 5px);
+        }
+        @media (max-width: 768px){
+            .imagez{
+                flex-direction: row;
+                align-items: center;
+            }
+            .imagez img {
+                width: 100%; /* Each image uses full width when stacked */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;"><u>Securing the Network</u></h2>
+        <div class="content">
+            <h1 style="text-align: center;">INTRODUCTION</h1>
+            <p>
+                There are many security threats that are spread over the internet. Viruses, worms, Trojan horses, zero-day attacks, hacker attacks, denial of service (DOS) attacks, data interception, and theft.            
+            </p>
+            <p>
+                That is why it is important that there are security protocols aside from router configuration to further protect the network. It is wise to prevent these threats from entering and spreading on the network.
+            </p>
+        </div>
+        <h2 style="text-align: center;">Network Security Components</h2>
+        <div class="content">
+            <p style="border: 1px solid; width: 100%;"></p>
+            <p>
+                To avoid these security threats, it is important that we have network security components. These are software applications that protect the usability, reliability, integrity, and safety of the network and the data.
+            </p>
+            <p style="border: 1px solid; width: 100%;"></p>
+            <p>
+                These components include <strong>anti-virus</strong> and <strong>anti-spyware programs, firewalls </strong>(to block unauthorized access to the network), <strong>intrusion prevention systems, or IPS,</strong> (to identify fast-spreading threats such as zero-day or zero-hour attacks), and <strong>Virtual Private Networks, or VPNs,</strong> (to provide secure remote access).
+            </p>
+
+        </div>
+        <h2 style="text-align: center;">Firewall</h2>
+        <div class="content">
+            <p>
+                Basically, a firewall is a device -- that can be hardware or software based -- which controls access to the organization's network.            
+            </p>
+            <p style="border: 1px solid; width: 100%;"></p>
+            <dl>
+                <caption><i>There are several types of firewalls depending on the security needed by the network.</i></caption>
+                <dt>
+                    <strong>
+                        Network Layer Firewalls
+                    </strong>
+                </dt>
+                <dd>
+                    These operate at a low level of TCP/IP protocol where packets are not allowed to pass through unless they match the rules set by the firewall administrator.
+                </dd>
+
+                <dt>
+                    <strong>
+                        Application Layer Firewalls
+                    </strong>
+                </dt>
+                <dd>
+                    These work on the application level of the TCP/IP stack. These can intercept all packets traveling to or from the applcication. They can block other packets - unwanted outside traffic can be prevented.                
+                </dd>
+
+                <dt>
+                    <strong>
+                        Application Firewalls
+                    </strong>
+                </dt>
+                <dd>
+                    These are network-layer and application-layer types that overlap. An example is restricting ftp services through <i>/etc/ ftpaccess</i> file.                
+                </dd>
+                
+                <dt>
+                    <strong>
+                        Proxy Firewalls                    
+                    </strong>
+                </dt>
+                <dd>
+                    These operate at the firewall's application layer. These act as intermediary for requests from one network to another for a specific network application.  These prevent direct connections between either side; allowing or blocking traffic based on the rules set.                
+                </dd>
+            </dl>
+        </div>
+    
+    </div>   
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 40px;
+        }
+        .title_1 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+        .question {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        ol {
+            list-style-type:decimal; /* Removes default list numbering */
+            padding-left: 30px;
+            text-align: justify;
+        }
+        ul{
+            
+            padding-left: 30px;
+            text-align: justify;
+        }
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="title_1">
+        <h1>Set-Up Computer Networks</h1>
+        <h2>UNIT 1</h2>
+    </div>
+    <div class="container">
+        <h2 style="text-align: center;"><u>Understanding Network Devices</u></h2>
+        <div class="content">
+            <h1 style="text-align: center;">INTRODUCTION</h1>
+            <p>We aim to understand how computers are connected to each other that is why it is essential that we should be familiar with the different devices found in the workplace to perform network connectivity. <br>
+                It is important to understand that <strong>each workplace has a unique plan/map</strong> of how the organization distributes information and who has access. <br>
+                This lesson's goal is to simply familiarize ourselves with the <strong>different network devices</strong> which we will get to connecting later.
+            </p>
+        </div>
+        <h2 style="text-align: center;"><u>Network Devices</u></h2>
+        <div class="content">
+            <dl>
+                <dt><strong>Router</strong></dt>
+                <dd>
+                    A device that forwards data packets along networks. A router is connected to at least two networks, commonly two LANs or WANs or a LAN and its ISP's network. Routers are located at gateways, the places where two or more networks connect.
+                    <img src="images/img.png" alt="img">
+                </dd>
+                <dt><strong>Switch </strong></dt>
+                <dd>
+                    A device that filters and forwards packets between LAN segments. Switches operate at the data link layer (layer 2) and sometimes the network layer (layer 3) of the OSI Reference Model and therefore support any packet protocol. LANs that use switches to join segments are called <strong>switched LANs</strong> or, in the case of Ethernet networks, <strong>switched Ethernet LANs</strong>. 
+                    <img src="images/img1.png" alt="img1">
+                </dd>
+                <dt><strong>Hub</strong></dt>
+                <dd>
+                    A common connection point for devices in a network. Hubs are commonly used to connect segments of a LAN. A hub contains multiple ports. When a packet arrives at one port, it is copied to the other ports so that all segments of the LAN can see all packets.
+                    <br>
+                    <strong>Hubs</strong> and <strong>switches</strong> serve as a central connection for all of your network equipment and handles a data type known as frames. Frames carry your data. When a frame is received, it is amplified and then transmitted on to the port of the destination PC. 
+                    <img src="images/img2.png" alt="img2">
+                </dd>
+                <dt><strong>Repeater</strong></dt>
+                <dd>
+                    A network device used to regenerate or replicate a signal. Repeaters are used in transmission systems to regenerate analog or digital signals distorted by transmission loss. Analog repeaters frequently can only amplify the signal while digital repeaters can reconstruct a signal to near its original quality.
+                    <img src="images/img3.png" alt="img3">
+                </dd>
+                <dt><strong>Bridge</strong></dt>
+                <dd>
+                    A device that connects two local-area networks (LANs), or two segments of the same LAN that use the same protocol, such as Ethernet or Token-Ring.
+                </dd>
+            </dl>
+        </div>
+        <h2 style="text-align: center;"><u>Local Area Network</u></h2>
+        <div class="content">
+            <p>
+            Basically, a <strong>local area network</strong>, called as <strong>LAN</strong>, is a group of computers and connected devices that share a common communication line (or may be wireless) to a server. <br>
+            A LAN is where computers and mobile devices may share resources like printers, scanners, storage, etc.
+            </p>
+            <br>
+            <h3>Local Area Connection Properties</h3>
+            <p>To make sure that your LAN works properly, make sure that the following items are     installed and enabled in the <strong>Local Area Connection Properties</strong>:</p>
+            <p style="border: 1px solid; width: 100%;"></p>
+
+            <h3>Clients For Microsoft Networks</h3>
+            <p>Allow your computer to share files and printers in Microsoft Network.</p>
+            <p style="border: 1px solid; width: 100%;"></p>
+
+            <h3>Internet Protocol Version 4 (TCP/IPv4)</h3>
+            <p>The protocol that enables the computer to communicate with other computers in the network. This can be set automatically or manually specified along with another network information to work properly. Make sure however that each device has a unique IP.</p>
+            <p style="border: 1px solid; width: 100%;"></p>
+            <h3>LAN Settings</h3>
+            <p>These are specific IP settings for the LAN interface. <br>
+                The default IP Address is 192.168.0.1. <br>
+                The default Subnet Mask is 255.255.255.0.</p>
+            <p style="border: 1px solid; width: 100%;"></p>
+            <h3>DHCP Server</h3>
+            <p>Stands for Dynamic Host Control Protocol. This gives the IP Addresses when a device starts and requests an IP address from the network. It can be set to obtain IP address automatically.</p>
+            <p style="border: 1px solid; width: 100%;"></p>
+        </div>
+        <h2 style="text-align: center;"><u>Network Testing</u></h2>
+        <div class="content">
+            <p style="border: 1px solid; width: 100%;"></p>
+            <h3>Home Network</h3>
+            <p>This type is ideal for home networks where you trust all the people and the devices using the network. By default, network discovery is turned on, allowing you to see other computers and devices, and others can see you as well.</p> 
+            <p style="border: 1px solid; width: 100%;"></p>
+            <h3>Work Network</h3>       
+            <p>This type is used in small office or other workplace networks. By default, network discovery is enabled allowing other computers on a network. However, you cannot join or create a homegroup.</p>
+            <p style="border: 1px solid; width: 100%;"></p>
+            <h3>Public Network</h3>
+            <p>This type is the safest. This is designed to keep your computer from being visible to others and helps protect your computer from malicious software from the Internet. However, network discovery is turned off and homegroup is not available on this network.</p>
+            <p style="border: 1px solid; width: 100%;"></p>
+            <h3>Domain Network</h3>
+            <p>This is used for domains and at enterprise networks. This is controlled by the network administrator.</p>
+        </div>
+        <h2 style="text-align: center;"><u>Wide Area Network</u></h2>
+        <div class="content">
+            <p>Also known as WAN. This is a collection of computers and networks connected via a network just like the LAN. However, in WAN, it is connected over a large geographic area.</p>
+            
+            <p style="border: 1px solid; width: 100%;"></p>
+            <p>The following are the WAN settings used to connect to the Internet Service Provider (ISP):</p>
+            <p style="border: 1px solid; width: 100%;"></p>
+
+            <dl>
+                <dt><strong>Dynamic IP Address</strong></dt>
+                <dd>This is to obtain an IP address automatically from the ISP.</dd>
+
+                <dt><strong><i>Host Name</i></strong></dt>
+                <dd>This is optional. Usually, this is the model number of the device.</dd>
+
+                <dt><strong><i>MAC Address</i></strong></dt>
+                <dd>This is optional. MAC stands for Media Access Control. The MAC Address is set by default to the MAC Address of the WAN interface in the device.</dd>
+
+                <dt><strong><i>Primary DNS Address/ Secondary DNS Address</i></strong></dt>
+                <dd>This is optional. A Domain Name Server (DNS) is entered. If left blank, the ISP provides the DNS address.</dd>
+
+                <dt><strong><i>Auto-Reconnect.</i></strong></dt>
+                <dd>This feature allows the router to reconnect to the ISP automatically if connections is disconnected.</dd>
+            </dl>
+
+            <p style="border: 1px solid; width: 100%;"></p>
+
+            <h3>Static IP Address</h3>
+            <p>This is to set a specific IP Address that is still provided by the ISP. However, this is avoided because this requires a lot of work and manual entry of network information.</p>
+            <p style="border: 1px solid; width: 100%;"></p>
+
+            <h3>PPPoE</h3>
+            <p>Stands for Point-to-Point Protocol over Ethernet. Only used if the ISP uses this protocol. The ISP provides the username and password.</p>
+        </div>
+        <h2 style="text-align: center;"><u>Wide Area Network</u></h2>
+        <div class="content">
+            <h2>IP Addressing</h2>
+            <p><strong>IP Address</strong>, or the <strong><i>Internet Protocol Address</i></strong>, is a numerical label assigned to a device within a computer network that uses the Internet Protocol. It has two functions: (1) network hosting ; and (2) location addressing.</p>
+            <img src="images/img4.png" alt="img4">
+
+            <p>
+                The <strong>IPv4</strong> is still in use today. It is a 32-bit number system.
+                
+                On the other hand, a new version of Internet Protocol called the <strong>IPv6</strong> makes use of 128 bits for its address. (e.g. 2001:db8:0:1234:0:567:8:1)
+
+            </p>
+        </div>
+    </div>   
+</body>
+</html>
