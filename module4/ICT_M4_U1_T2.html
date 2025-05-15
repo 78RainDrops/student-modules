@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 40px;
+        }
+        .title_1 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+        .question {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        ol {
+            list-style-type:decimal; /* Removes default list numbering */
+            padding-left: 30px;
+            text-align: justify;
+        }
+        ul{
+            
+            padding-left: 30px;
+            text-align: justify;
+        }
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        p{
+            text-align: justify;
+        }
+        .responsive-video {
+            width: 100%;
+            height: auto;
+            max-width: 650px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px; /* optional */
+        }
+        .imagez{
+            display: flex;
+            gap: 10px;
+            width: calc(50% - 5px);
+        }
+        @media (max-width: 768px){
+            .imagez{
+                flex-direction: row;
+                align-items: center;
+            }
+            .imagez img {
+                width: 100%; /* Each image uses full width when stacked */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;"><u>Creating Network Cables</u></h2>
+        <div class="content">
+            <h1 style="text-align: center;">INTRODUCTION</h1>
+            <p>
+                In this lesson, you will learn how to create a user folder with Network Operating System, or NOS, features.            
+            </p>
+            <p>
+                Basically, a <strong>user folder</strong> is the storage of files stored by the user to the computer server.
+            </p>
+        </div>
+        <h2 style="text-align: center;">Active Directory Domain Services</h2>
+            <div class="content">
+                <p>
+                    Before creating a user folder, the administrator of the server should <strong><i>first</i> install the Active Directory Domain Services (ADDS) and create a user account</strong> .
+                </p>
+                <p>
+                    <u>To install the ADDS</u>, the administrator should open command prompt (Ctrl + R then cmd), and type <strong>dcpromo</strong> to install ADDS, DNS, and create a forest and domain.
+                </p>
+                <p style="border: 1px solid; width: 100%;"></p>
+                <p>A server that runs ADDS is a <strong>domain controller</strong>.</p>
+                <caption>The domain controller basically:</caption>
+                <p>
+                    Validates and gives access to all users and computers in a Windows domain type network;
+                </p>
+                <p>
+                    Appoints and creates security protocols for all computers; and
+                </p>
+                <p>
+                    Installs and adds software.
+                </p>
+
+                <h3>Features of ADDS</h3>
+                    <ol>
+                        <caption>These are the features of having the Active Directory Domain Services:</caption>
+                        <li>
+                            <strong>Security </strong>
+                            - The data is stored securely. Each of the objects in the Active Directory has an ACL or Access Control List which consists of the resources that one may access and along with access privileges given to each resource.
+                        </li>
+                        <li>
+                            <strong>Query Capabilities </strong>
+                            - The ADDS creates a global catalog to give a mechanism to handle queries. A client which has ADDS can query the catalog to request directory data.                        
+                        </li>
+                        <li>
+                            <strong>Replication </strong>
+                            - To replicate a directory to all domain controllers means easy access, high availability, and improved fault tolerance.
+                        </li>
+                        <li>
+                            <strong>Extensibility </strong>
+                            - Having ADDS is extensible. Meaning that new object types can be added to a directory. An attribute can be added, for example to the user object. <br>
+                            Once a user is created, a user folder is also automatically created upon the log-in of the user to the client computer.
+
+                        </li>
+                    </ol>
+            </div>
+        <h2 style="text-align: center;">Creating a User Folder</h2>
+            <div class="content">
+                <p>
+                    This topic will teach you how to create a user folder with network operating system (NOS) features.
+                </p>
+                <p>
+                    <i>
+                        You can carefully follow the steps below if you have two computer units (one installed with Windows Server OS and a Windows 7/8/10 ) connected through a network cable.
+                    </i>
+                </p>
+                <ol>
+                    <li>On the server computer create a shared folder on drive C: or drive D:</li>
+                    <li>On server manager, select Features, Group Policy Management, Forest, Domains, (Domain name), Right click on Policy, Edit</li>
+                    <li>Chooser User Configuration, Choose Policies</li>
+                    <li>Choose Windows Setting</li>
+                    <li>Choose Folder Redirection</li>
+                    <li>Choose your directory to be redirect, press right click on your mouse and select properties</li>
+                    <li>Target Setting: Choose Basic</li>
+                    <li>Under Root Path, type the share name of your folder</li>
+                    <li>Click OK</li>
+                    <li>Log-in to the client computer to automatically create User folder</li>
+                </ol>
+            </div>
+        <h2 style="text-align: center;">Set Static IP Address</h2>
+            <div class="content">
+                <p>
+                    Follow the step-by-step procedures on how to set a static IP address. This is a crucial step when configuring the server as this is required for the server computer itself.
+                </p>
+                <div class="imagez">
+                    <img src="images/img7.jpg" alt="img7">
+                    <img src="images/img8.jpg" alt="img8">
+                </div>
+                <div class="imagez">
+                    <img src="images/img9.jpg" alt="img9">
+                    <img src="images/img10.jpg" alt="img10">
+                </div>
+                <div class="imagez">
+                    <img src="images/img11.jpg" alt="img11">
+                    <img src="images/img12.jpg" alt="img12">
+                </div>
+                <div class="imagez">
+                    <img src="images/img13.jpg" alt="img13">
+                    <img src="images/img14.jpg" alt="img14">
+                </div>
+                <div class="imagez">
+                    <img src="images/img15.jpg" alt="img15">
+                    <img src="images/img16.jpg" alt="img16">
+                </div>
+                <div class="imagez">
+                    <img src="images/img17.jpg" alt="img17">
+                    <img src="images/img18.jpg" alt="img18">
+                </div>
+                <div class="imagez">
+                    <img src="images/img19.jpg" alt="img19">
+                    <img src="images/img20.jpg" alt="img20">
+                </div>
+                <div class="imagez">
+                    <img src="images/img21.jpg" alt="img21">
+                    <img src="images/img22.jpg" alt="img22">
+                </div>
+            </div>
+        <h2 style="text-align: center;">Configuring the Active Directory Domain Services</h2>
+            <div class="content">
+                <p>
+                    Follow the step-by-step procedures on how to configure the ADDS. This is important since this is where all the information on resources are centered on.
+                </p>
+                <div class="imagez">
+                    <img src="images/img23.jpg" alt="img23">
+                    <img src="images/img24.jpg" alt="img24">
+                </div>
+                <div class="imagez">
+                    <img src="images/img25.jpg" alt="img25">
+                    <img src="images/img26.jpg" alt="img26">
+                </div>
+                <div class="imagez">
+                    <img src="images/img27.jpg" alt="img27">
+                    <img src="images/img28.jpg" alt="img28">
+                </div>
+                <div class="imagez">
+                    <img src="images/img29.jpg" alt="img29">
+                    <img src="images/img30.jpg" alt="img30">
+                </div>
+                <div class="imagez">
+                    <img src="images/img31.jpg" alt="img31">
+                    <img src="images/img32.jpg" alt="img32">
+                </div>
+                <div class="imagez">
+                    <img src="images/img33.jpg" alt="img33">
+                    <img src="images/img34.jpg" alt="img34">
+                </div>
+                <div class="imagez">
+                    <img src="images/img35.jpg" alt="img35">
+                    <img src="images/img36.jpg" alt="img36">
+                </div>
+                <div class="imagez">
+                    <img src="images/img37.jpg" alt="img37">
+                    <img src="images/img38.jpg" alt="img38">
+                </div>
+                <img src="images/img39.jpg" alt="img39">
+            </div>
+        <h2 style="text-align: center;">Adding Roles</h2>
+            <div class="content">
+                <div class="imagez">
+                    <img src="images/img40.jpg" alt="img40">
+                    <img src="images/img41.jpg" alt="img41">
+                </div>
+                <div class="imagez">
+                    <img src="images/img42.jpg" alt="img42">
+                    <img src="images/img43.jpg" alt="img43">
+                </div>
+                <div class="imagez">
+                    <img src="images/img44.jpg" alt="img44">
+                    <img src="images/img45.jpg" alt="img45">
+                </div>
+                <div class="imagez">
+                    <img src="images/img46.jpg" alt="img46">
+                    <img src="images/img47.jpg" alt="img47">
+                </div>
+                <div class="imagez">
+                    <img src="images/img48.jpg" alt="img48">
+                    <img src="images/img49.jpg" alt="img49">
+                </div>
+                <div class="imagez">
+                    <img src="images/img50.jpg" alt="img50">
+                    <img src="images/img51.jpg" alt="img51">
+                </div>
+                <div class="imagez">
+                    <img src="images/img52.jpg" alt="img52">
+                    <img src="images/img53.jpg" alt="img53">
+                </div>
+                <div class="imagez">
+                    <img src="images/img54.jpg" alt="img54">
+                    <img src="images/img55.jpg" alt="img55">
+                </div>
+            </div>
+        <h2 style="text-align: center;">Creating an Organizational Unit & User</h2>
+            <div class="content">
+                <div class="imagez">
+                    <img src="images/img56.jpg" alt="img56">
+                    <img src="images/img57.jpg" alt="img57">
+                </div>
+                <div class="imagez">
+                    <img src="images/img58.jpg" alt="img58">
+                    <img src="images/img59.jpg" alt="img59">
+                </div>
+                <div class="imagez">
+                    <img src="images/img60.jpg" alt="img60">
+                    <img src="images/img61.jpg" alt="img61">
+                </div>
+                <div class="imagez">
+                    <img src="images/img62.jpg" alt="img62">
+                    <img src="images/img63.jpg" alt="img63">
+                </div>
+                <div class="imagez">
+                    <img src="images/img64.jpg" alt="img64">
+                    <img src="images/img65.jpg" alt="img65">
+                </div>
+                <div class="imagez">
+                    <img src="images/img66.jpg" alt="img66">
+                    <img src="images/img67.jpg" alt="img67">
+                </div>
+                <img src="images/img68.jpg" alt="img68">
+            </div>
+    </div>   
+</body>
+</html>

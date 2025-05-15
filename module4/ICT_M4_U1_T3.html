@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 40px;
+        }
+        .title_1 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+        .question {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        ol {
+            list-style-type:decimal; /* Removes default list numbering */
+            padding-left: 30px;
+            text-align: justify;
+        }
+        ul{
+            
+            padding-left: 30px;
+            text-align: justify;
+        }
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        p{
+            text-align: justify;
+        }
+        .responsive-video {
+            width: 100%;
+            height: auto;
+            max-width: 650px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px; /* optional */
+        }
+        .imagez{
+            display: flex;
+            gap: 10px;
+            width: calc(50% - 5px);
+        }
+        @media (max-width: 768px){
+            .imagez{
+                flex-direction: row;
+                align-items: center;
+            }
+            .imagez img {
+                width: 100%; /* Each image uses full width when stacked */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;"><u>Configure User Access</u></h2>
+        <div class="content">
+            <h1 style="text-align: center;">INTRODUCTION</h1>
+            <p>
+                In the workplace, computers are not used by an individual for personal use. Computers are usually accessed by more than one person. System administrators can log on locally if these accounts are in the domain. 
+            </p>
+            <p>
+                A computer can identify between one person to another through a security device called the <strong>user account object</strong>.
+            </p>
+            <p>
+                Each user in the network has a unique user account which contains the contact details of the users as well as what his/her rights and restrictions in accessing resources/folders, etc.
+            </p>
+        </div>
+        <h2 style="text-align: center;">Features of a User Account</h2>
+            <div class="content">
+                <p>
+                    <i>
+                        The following are the features of a domain-based user account in Windows Server 2008 r2 (which we will be using throughout this module).
+                    </i>
+                </p>
+                <p style="border: 1px solid; width: 100%;"></p>
+                <dl>
+                    <dt><strong>Password Security</strong></dt>
+                    <dd>Each user account is protected by a password to provide authorization and access to the system.</dd>
+                </dl>
+                <p style="border: 1px solid; width: 100%;"></p>
+                 <dl>
+                    <dt><strong>Permissions</strong></dt>
+                    <dd>These are access privileges granted to a user account (e.g. group memberships, user-specific settings to access resources, etc.)</dd>
+                </dl>
+                <p style="border: 1px solid; width: 100%;"></p>
+                <dl>
+                    <dt><strong>Identification</strong></dt>
+                    <dd>Having a user account means easily identifying the person to the computer system and network.</dd>
+                </dl>
+                <p style="border: 1px solid; width: 100%;"></p>
+                <dl>
+                    <dt><strong>User Rights</strong></dt>
+                    <dd>Having user rights is a high-level privilege given to users or groups to define their action on a computer system.</dd>
+                </dl>
+                <p style="border: 1px solid; width: 100%;"></p>
+                <dl>
+                    <dt><strong>Roaming</strong></dt>
+                    <dd>The administrator may define user accounts in a way that a user is able to log on to any system which is a member of a domain using a domain user account, a Remote Access Service (RAS), or gateway.</dd>
+                </dl>
+                <p style="border: 1px solid; width: 100%;"></p>
+                <dl>
+                    <dt><strong>Environment Layout</strong></dt>
+                    <dd>Profiles are user-specific and able to store information about the layout, desktop, and user environment in general. They are specifically restricted using mandatory profiles.</dd>
+                </dl>
+                <p style="border: 1px solid; width: 100%;"></p>
+                <dl>
+                    <dt><strong>Auditing</strong></dt>
+                    <dd>The server can track access and use by domain user accounts.</dd>
+                </dl>
+            </div>
+        <h2 style="text-align: center;">Configuring User Access</h2>
+            <div class="content">
+                <p>
+                    This topic will teach you how to <strong>configure user access level based on NOS features and established network policies and end-user requirements.</strong>
+                </p>
+                <p>
+                    <i>
+                        You can carefully follow the steps below if you have two computer units (one installed with Windows Server OS and a Windows 7/8/10 ) connected through a network cable.
+                    </i>
+                </p>
+                <ol>
+                    <li>
+                        To get to Active Directory Users and Computers, choose Start> All Programs > Administrative Tools > Active Directory Users and Computers.        
+                    </li>
+                    <li>
+                        In the console tree, click the folder that corresponds to the domain or organization unit to which you want to assign this new account.
+                    </li>
+                    <li>
+                        In the details pane, right click the group and then choose Properties.
+                    </li>
+                    <li>
+                        On the Members tab, Click Add.
+                    </li>
+                    <li>
+                        Fill in the following information.
+                    </li>
+                    <li>
+                        Click the Next button to continue setting up this new user account object.
+                    </li>
+                    <li>
+                        Type the password for this account and confirm that password to the system by retyping it.
+                    </li>
+                    <li>
+                        Configure the password setting using the options described.
+                    </li>
+                    <li>
+                        Click the Next button when you are finished marking your selections.
+                    </li>
+                    <li>
+                        Click the Finish button if everything is correct. 
+                    </li>
+                </ol>
+            </div>
+    </div>   
+</body>
+</html>

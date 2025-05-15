@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 40px;
+        }
+        .title_1 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+        .question {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        ol {
+            list-style-type:decimal; /* Removes default list numbering */
+            padding-left: 30px;
+            text-align: justify;
+        }
+        ul{
+            
+            padding-left: 30px;
+            text-align: justify;
+        }
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        p{
+            text-align: justify;
+        }
+        .responsive-video {
+            width: 100%;
+            height: auto;
+            max-width: 650px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px; /* optional */
+        }
+        .imagez{
+            display: flex;
+            gap: 10px;
+            width: calc(50% - 5px);
+        }
+        @media (max-width: 768px){
+            .imagez{
+                flex-direction: row;
+                align-items: center;
+            }
+            .imagez img {
+                width: 100%; /* Each image uses full width when stacked */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;"><u>Checking Normal Functions</u></h2>
+        <div class="content">
+            <h1 style="text-align: center;">INTRODUCTION</h1>
+            <p>
+                In this lesson, you will be able to identify various boot processes. This is important because <i>a startup failure might occur</i>. <strong>To successfully boot the server operating system is the first step in handling the server</strong>.
+            </p>
+            <p>
+                Some issues may be easily diagnosed and corrected however, take note that not all server errors occur only during booting. It can also occur when it is running or even when the server is shutting down.
+            </p>
+        </div>
+        <h2 style="text-align: center;">Boot Process</h2>
+        <div class="content">
+            <ol>
+                <caption>
+                    The boot process has five major stages: 
+                </caption>
+                <li>Pre-boot</li>
+                <li>Boot</li>
+                <li>Load</li>
+                <li>Initialization</li>
+                <li>Log-on</li>
+            </ol>
+            <p>
+                In each stage, there are steps that should be followed in loading and using files. In each of these stages, observe how the process works, how the files are utilized, and what is seen on screen.
+            </p>
+        </div>
+        <h2 style="text-align: center;">Preboot</h2>
+            <div class="content">
+                <p>
+                    <strong>Pre-boot</strong> is basically the BIOS startup process. 
+                </p>
+                <p>
+                    By turning on or resetting the computer, you should perform the Power-On Self-Test or POST routine discussed in the previous modules.
+                </p>
+                <p>
+                    The BIOS shall execute the Initial Program Load where the boot devices are read and prioritized.
+                </p>
+                <p>
+                    The partition information is seen as well as the boot sector and the Windows Boot Manager. You will also see the memory check, hardware, and boot device search.
+                </p>
+                <dl>
+                    <caption>The following are common causes of error during this stage:</caption>
+                    <dt><strong>Corrupt MBR</strong></dt>
+                    <dd>This is caused by many viruses in the Master Boot Record which corrupted it.</dd>
+                    <dt><strong>Improperly configured hardware</strong></dt>
+                    <dd>This happens when the hard drive is not recognized. This error can happen even if the device is fine, and the configuration is unchanged.</dd>
+                    <dt><strong>No partition is marked as active.</strong></dt>
+                    <dd>This may happen if the Fdisk utility is recently used and no partition is made from all the free space available.</dd>
+                    <dt><strong>Corrupt or missing Ntldr file</strong></dt>
+                    <dd>This may happen when the Ntldr file is corrupted or deleted by a virus.</dd>
+                </dl>
+            </div>
+        <h2 style="text-align: center;">Boot</h2>
+            <div class="content">
+                <p>
+                    Windows Boot Manager reads the boot configuration data (BCD). But in the case of having more than one boot partition, it prompts the user to choose a partition and its operating system. 
+                </p>
+                <p>
+                    If a choice is not made before the time clocks out, the default partition and operating system will be loaded. If you are booting a Windows Server operating system, the Windows Boot Loader (Winload.exe) is started. 
+                </p>
+                <p style="border: 1px solid; width: 100%;"></p>
+                <dl>
+                    <caption>The following are common causes of error during this stage:</caption>
+                    <dt><strong>Missing or corrupt files</strong></dt>
+                    <dd>If Ntldr, Boot.ini, Bootsect.dos, Ntdetect.com, or Ntoskrnl.exe is corrupt or missing either by a virus or by some malicious intent, the boot sequence will not succeed. An error message will indicate which file is missing or corrupt.</dd>
+                    <dt><strong>Improperly configured Boot.ini file</strong></dt>
+                    <dd>This may happen when you manually edit Boot.ini or if you have made any changes to the disk configuration.</dd>
+                    <dt><strong>Unrecognizable improperly configured hardware</strong></dt>
+                    <dd>If the error that appears is due to Ntdetect.com, the issue comes from the hardware.</dd>
+                </dl>
+            </div>
+        <h2 style="text-align: center;">Load, Initialization, and Logon</h2>
+            <div class="content">
+                <dl>
+                    <caption>The following are common causes of error during this stage:</caption>
+                    <dt><strong>Load</strong></dt>
+                    <dd><p>By this time, the Windows Server 2008 “splash” screen comes up.</p>
+                    <p>While this happens, the Windows Boot Loader loads the operating system kernel, the hardware abstraction layer that provides the interface between the operating system and a particular set of hardware, the Registry file, and the drivers for basic hardware devices, such as the monitor, mouse, and keyboard.</p></dd>
+                    <dt><strong>Initialization</strong></dt>
+                    <dd>The OS kernel is initialized and takes over from the Windows Boot Loader, bringing up the graphical display and filling the Registry with HKEY_LOCAL_ MACHINE\HARDWARE key, and HKEY_LOCAL_MACHINE\SYSTEM\SELECT subkey (called the “Clone Control Set”) and loads the remainder of the device drivers.</dd>
+                    <dt><strong>Logon</strong></dt>
+                    <dd>
+                        <p>The Windows Server OS graphic user interface (GUI) comes up and the logon screen will show. </p>
+                        <p>After a successful logon, the necessary services are prompted, the Last Known Good control set is written based on the Clone Control Set, and the start-up programs are started.</p>
+                        <ol>
+                            <caption>Possible errors during logon stage.</caption>
+                            <li>If logon errors occur, they are usually due to an incorrect username or password or to the unavailability of a DNS server or a domain controller to authenticate the request (if the computer is a part of a domain).</li>
+                            <li>Errors can also occur if a service cannot be loaded. If a service fails to load, you will see a message in the System Log of Event Viewer.</li>
+                        </ol>
+                    </dd>
+                </dl>
+
+            </div>
+       
+    </div>   
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 40px;
+        }
+        .title_1 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+        .question {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        ol {
+            list-style-type:decimal; /* Removes default list numbering */
+            padding-left: 30px;
+            text-align: justify;
+        }
+        ul{
+            
+            padding-left: 30px;
+            text-align: justify;
+        }
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        p{
+            text-align: justify;
+        }
+        .responsive-video {
+            width: 100%;
+            height: auto;
+            max-width: 650px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px; /* optional */
+        }
+        .imagez{
+            display: flex;
+            gap: 10px;
+            width: calc(50% - 5px);
+        }
+        @media (max-width: 768px){
+            .imagez{
+                flex-direction: row;
+                align-items: center;
+            }
+            .imagez img {
+                width: 100%; /* Each image uses full width when stacked */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;"><u>Performing Network Services</u></h2>
+        <div class="content">
+            <h1 style="text-align: center;">INTRODUCTION</h1>
+            <p>
+                When you are managing a <strong>NOS</strong> or <strong>Network Operating System</strong>, you should know there are different network services that are available. 
+            </p>
+            <p>
+                <i>These services need to be configured so that communication will flow easily within the network.</i>
+            </p>
+            <p>
+                <i>You are expected to learn most of these network services and configure them. </i>
+            </p>
+            <p>
+                There are <strong>seven basic network services</strong> that you need to be familiar with: remote access, domain controller, web services, database services, proxy server, file services, and printer services.
+            </p>
+            <p>
+                We will go through each of these through this lesson.
+            </p>
+        </div>
+        <h2 style="text-align: center;">Remote Access</h2>
+            <div class="content">
+                <p>
+                    Remote access technology enables one to login to a system as an authorized user without being physically present at the keyboard. This is <strong>common</strong> in <strong>corporate</strong> computer networks.
+                </p>
+                <p>
+                    One of the most common form of remote access is the <strong>remote desktop</strong>. This basically allows a server computer can control with the actual desktop user interface of another computer.
+                </p>
+                <p>
+                    To setup a remote desktop, both the host and target (controlling computer and remote computer to be accessed) need to be installed certain software.
+                </p>
+            </div>
+        <h2 style="text-align: center;">Domain Controller</h2>
+            <div class="content">
+                <p>                
+                    This service is one of the most used on a Windows network. It enables one to realistically assess operational requirements and server performance for each computer.
+                </p>
+                <p>
+                    It responds to <strong>security authentication requests</strong> and the like that need verification from the host for many security and validation doors across the network.
+                </p>
+            </div>
+        <h2 style="text-align: center;">Web Services</h2>
+            <div class="content">
+                <p>
+                    Having a web server enables <strong>hosting</strong> among websites and web-based applications. Both static and dynamic content can be hosted on a Web server.
+                </p>
+                <p>
+                    Several web applications that have many roles and functions can also be hosted using ASP.NET and .NET Framework 3.0, among others.
+                </p>
+            </div>
+        <h2 style="text-align: center;">Database Services</h2>
+            <div class="content">
+                <p>
+                    A <strong>database server</strong> is a computer program that offers database services to other computer programs or computers, as seen in the client–server model. 
+                </p>
+                <p>
+                    The term may also refer to a computer dedicated to running such a program. Database management systems frequently provide database server functionality.
+                </p>
+            </div>
+        <h2 style="text-align: center;">Proxy Server</h2>
+            <div class="content">
+                <p>
+                    In computer networks, a <strong>proxy server</strong> is a server (a computer system or an application) that acts as a middle-ground for requests from clients seeking resources from other servers.
+                </p>
+                <p>
+                    A client connects to the proxy server, requesting some service, such as a file, connection, web page, or other resource available from a different server and the proxy server evaluates the request to simplify and control its complexity. 
+                </p>
+                <p>
+                    Proxies were created to add structure and encapsulation to distributed systems. 
+                </p>
+            </div>
+        <h2 style="text-align: center;">File Services</h2>
+            <div class="content">
+                <p>
+                    The <strong>file services role</strong> provides essential services for managing files and the way they are made available and replicated on the network. 
+                </p>
+                <p>
+                    Several server roles require some type of file service. 
+                </p>
+                <p>
+                    Includes these role services and subservices: File Server, Distributed File System, DFS Namespace, DFS Replication, File Server Resource Manager, Services for Network File System (NFS), Windows Search Service, Windows Server 2003 File Services, File Replication Service (FRS), and Indexing Service.
+                </p>
+            </div>
+        <h2 style="text-align: center;">Print Services</h2>
+            <div class="content">
+                <p>
+                    For print servers, this resource type provides for high availability of network-attached print devices. Printers connected directly to print servers cannot be included because there is no way to fail over control to a different server. 
+                </p>
+                <p>
+                    If a print server fails, all jobs that are currently spooling are restarted. Jobs that are in the process of spooling are discarded and must be re-spooled or reprinted to the Print Spooler resource.
+                </p>
+            </div>
+        <h2 style="text-align: center;">Performing basic network service configuration.</h2>
+            <div class="content">
+                <p><i>You will be needing a computer installed with Windows Server 2008 R2 operating system to perform the following procedures.</i></p>
+                <dl>
+                    <caption><strong>Steps/Procedure:</strong></caption>
+                        <p style="border: 1px solid; width: 100%;"></p>
+
+                    <dt><strong>Task 1: Install DHCP and File Services</strong></dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                In Server Manager, select Role; then select Add Role in the right pane
+                            </li>
+                            <li>
+                                Follow the series of steps provided in the wizard
+                                <ol>
+                                    <li>Tick “DHCP Server” and “Files Services”</li>
+                                    <li>Read the installation guide and follow the steps carefully</li>
+                                    <li>Note: Always validate the IP Address; set the IP range after the installation</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </dd>
+                        <p style="border: 1px solid; width: 100%;"></p>
+                    <dt><strong>Task 2: Make a Group Policy Management</strong></dt>
+                    <dd>
+                        <ul>
+                            <li>Go to “Features”, Group Policy Management, Forest, Domain</li>
+                            <li>Right click on Domains and choose Create a GPO in this domain</li>
+                            <li>Write a GPO name and click OK</li>
+                            <li>Unchecked Link Enabled</li>
+                            <li>On Security Filtering, click Add and Insert Everyone</li>
+                            <li>Close the Server Manager to refresh</li>
+                        </ul>
+                    </dd>
+                        <p style="border: 1px solid; width: 100%;"></p>
+                    <dt><strong>Task 3: Create DHCP (IP Scope)</strong></dt>
+                    <dd>
+                        <ul>
+                            <li>Select Roles, DHCP Server, (domain), right-click on IPv4 and select New Scope</li>
+                            <li>Write a new scope name</li>
+                            <li>Set your IP Address range</li>
+                            <li>Skip on IP add Exclusions</li>
+                            <li>Set Lease Duration</li>
+                            <li>Choose YES for Configure DHCP Options</li>
+                            <li>Skip on the next procedures</li>
+                            <li>Activate the scope now</li>
+                        </ul>
+                    </dd>
+
+                    <dt><strong>Task 4: Create Folder Redirection</strong></dt>
+                    <dd>
+                        <ul>
+                            <li>Select “Features”, Group Policy Management, Forest, Domains, (Domain name), right-click on Policy, choose Edit</li>
+                            <li>Choose User Configuration</li>
+                            <li>Choose Policies</li>
+                            <li>Choose Window Settings</li>
+                            <li>Choose Folder Redirection</li>
+                            <li>Choose your directory to be directed, right-click and select Properties</li>
+                            <li>Target Settings: Choose Basic</li>
+                            <li>Under Root Path, type the share name of your folder</li>
+                            <li>Click OK</li>
+                        </ul>
+                    </dd>
+
+                </dl>
+            </div>
+        <h2 style="text-align: center;">Folder Sharing</h2>
+            <div class="content">
+                <p>Follow the step-by-step procedures on how to configure folder sharing where folders across a network are shared to all connected devices. </p>
+                <div class="imagez">
+                    <img src="images/img69.jpg" alt="img69">
+                    <img src="images/img70.jpg" alt="img70">
+                </div>
+                <img src="images/img71.jpg" alt="img71">
+                <img src="images/img72.jpg" alt="img72">
+                <div class="imagez">
+                    <img src="images/img73.jpg" alt="img73">
+                    <img src="images/img74.jpg" alt="img74">
+                </div>
+                <div class="imagez">
+                    <img src="images/img75.jpg" alt="img75">
+                    <img src="images/img76.jpg" alt="img76">
+                </div>
+                <div class="imagez">
+                    <img src="images/img77.jpg" alt="img77">
+                    <img src="images/img78.jpg" alt="img78">
+                </div>
+                <div class="imagez">
+                    <img src="images/img79.jpg" alt="img79">
+                    <img src="images/img80.jpg" alt="img80">
+                </div>
+                <div class="imagez">
+                    <img src="images/img81.jpg" alt="img81">
+                    <img src="images/img82.jpg" alt="img82">
+                </div>
+                <div class="imagez">
+                    <img src="images/img83.jpg" alt="img83">
+                    <img src="images/img84.jpg" alt="img84">
+                </div>
+                <img src="images/img85.jpg" alt="img85">
+            </div>
+        <h2 style="text-align: center;">Folder Redirection</h2>
+            <div class="content">
+                <div class="imagez">
+                    <img src="images/img86.jpg" alt="img86">
+                    <img src="images/img87.jpg" alt="img87">
+                </div>
+                <div class="imagez">
+                    <img src="images/img88.jpg" alt="img88">
+                    <img src="images/img89.jpg" alt="img89">
+                </div>
+                <div class="imagez">
+                    <img src="images/img90.jpg" alt="img90">
+                    <img src="images/img91.jpg" alt="img91">
+                </div>
+                <div class="imagez">
+                    <img src="images/img92.jpg" alt="img92">
+                    <img src="images/img93.jpg" alt="img93">
+                </div>
+                <div class="imagez">
+                    <img src="images/img94.jpg" alt="img94">
+                    <img src="images/img95.jpg" alt="img95">
+                </div>
+                <div class="imagez">
+                    <img src="images/img96.jpg" alt="img96">
+                    <img src="images/img97.jpg" alt="img97">
+                </div>
+                <div class="imagez">
+                    <img src="images/img98.jpg" alt="img98">
+                    <img src="images/img99.jpg" alt="img99">
+                </div>
+                <div class="imagez">
+                    <img src="images/img100.jpg" alt="img100">
+                    <img src="images/img101.jpg" alt="img101">
+                </div>
+                <div class="imagez">
+                    <img src="images/img102.jpg" alt="img102">
+                    <img src="images/img103.jpg" alt="img103">
+                </div>
+                <div class="imagez">
+                    <img src="images/img104.jpg" alt="img104">
+                    <img src="images/img105.jpg" alt="img105">
+                </div>
+                <div class="imagez">
+                    <img src="images/img106.jpg" alt="img106">
+                    <img src="images/img107.jpg" alt="img107">
+                </div>
+                <img src="images/img108.jpg" alt="img108">
+            </div>
+        <h2 style="text-align: center;">Remote Desktop Configuration</h2>
+            <div class="content">
+                <img src="images/img109.jpg" alt="img109">
+                <div class="imagez">
+                    <img src="images/img110.jpg" alt="img110">
+                    <img src="images/img111.jpg" alt="img111">
+                </div>
+                <div class="imagez">
+                    <img src="images/img112.jpg" alt="img112">
+                    <img src="images/img113.jpg" alt="img113">
+                </div>
+                <img src="images/img114.jpg" alt="img114">
+                <img src="images/img115.jpg" alt="img115">
+                <img src="images/img116.jpg" alt="img116">
+                <img src="images/img117.jpg" alt="img117">
+                
+            </div>
+    </div>   
+</body>
+</html>

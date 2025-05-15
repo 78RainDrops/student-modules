@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 40px;
+        }
+        .title_1 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+        .question {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        ol {
+            list-style-type:decimal; /* Removes default list numbering */
+            padding-left: 30px;
+            text-align: justify;
+        }
+        ul{
+            
+            padding-left: 30px;
+            text-align: justify;
+        }
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        p{
+            text-align: justify;
+        }
+        .responsive-video {
+            width: 100%;
+            height: auto;
+            max-width: 650px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px; /* optional */
+        }
+        .imagez{
+            display: flex;
+            gap: 10px;
+            width: calc(50% - 5px);
+        }
+        @media (max-width: 768px){
+            .imagez{
+                flex-direction: row;
+                align-items: center;
+            }
+            .imagez img {
+                width: 100%; /* Each image uses full width when stacked */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;"><u>Installing Modules and Add-ons</u></h2>
+        <div class="content">
+            <h1 style="text-align: center;">INTRODUCTION</h1>
+            <p>
+                One must be able to load modules and add-ons so that you can access their functions. Modules will contain other modules. But however, modules are independent and can be used without the other depending on the needs of the server..            
+            </p>
+            <p>
+                This lesson will briefly go through the different modules and add-ons that you may utilize for the server.
+            </p>
+        </div>
+        <h2 style="text-align: center;">Using Modules</h2>
+            <div class="content">
+                <p>
+                    The <strong>module</strong> is the package that contains Windows PowerShell commands. Examples of these are ascmdlets, providers, functions, workflows, variables, and aliases.
+                </p>
+                <p>
+                    You can write commands with these modules to organize commands and share with others.
+                </p>
+                <p>
+                    Those who will receive modules can add commands in the modules to their Windows PowerShell sessions to use them like built-in commands.
+                </p>
+            </div>
+        <h2 style="text-align: center;">List of Modules/Add-ons</h2>
+            <div class="content">
+                <ol>
+                    <caption><strong><i>The following are modules which support different functions and features in the Windows Server OS.</i></strong></caption>
+                    <li>Active Directory module</li>
+                    <li>Active Directory Rights Management Services module </li>
+                    <li>Active Directory Rights Management Services Administration module</li>
+                    <li>Application ID Policy Management module</li>
+                    <li>Best Practice Analyzer module</li>
+                    <li>Background Intelligent Transfer Service (BITS)</li>
+                    <li>Failover Clusters module</li>
+                    <li>Group Policy module</li>
+                    <li>Network Load Balancing Clusters module</li>
+                    <li>Remote Desktop Services module</li>
+                    <li>Server Manager module</li>
+                    <li>Server Migration module</li>
+                    <li>Internet Information Services (IIS) module</li>
+                </ol>
+            </div>
+        <h2 style="text-align: center;">Installing Modules/Add-ons</h2>
+            <div class="content">
+                <p>The following are the steps you should follow in installing modules/add-ons.</p>
+                <dl>
+                    <caption><u>Procedure:</u></caption>
+                    <dt><strong>Step 1:</strong> Find all “Module” commands</dt>
+                    <dd><i>In the PowerShell window, type the following command and press ENTER:</i></dd>
+                    <dd><strong>Get-Command –Noun Module</strong></dd>
+                    <dt><strong>Step 2:</strong> List all modules that are available</dt>
+                    <dd><i>In the PowerShell window, type the following command and press ENTER:</i></dd>
+                    <dd><strong>Get-Module –ListAvailable</strong></dd>
+                    <dt><strong>Step 3:</strong> Load the ServerManager module into the current session</dt>
+                    <dd><i>In the PowerShell window, type the following command and press ENTER:</i></dd>
+                    <dd><strong>Get-Help Import-Module</strong></dd>
+                    <dd><i>In the PowerShell window, type the following command and press ENTER:</i></dd>
+                    <dd><strong>Import-Module ServerManager</strong></dd>
+
+                </dl>
+            </div>
+       
+    </div>   
+</body>
+</html>
