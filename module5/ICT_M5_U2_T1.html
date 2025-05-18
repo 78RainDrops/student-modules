@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 40px;
+        }
+        .title_1 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+        .question {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        ol {
+            list-style-type:decimal; /* Removes default list numbering */
+            padding-left: 30px;
+            text-align: justify;
+        }
+        ul{
+            
+            padding-left: 30px;
+            text-align: justify;
+        }
+        .content{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffff;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        p{
+            text-align: justify;
+        }
+        .responsive-video {
+            width: 100%;
+            height: auto;
+            max-width: 650px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px; /* optional */
+        }
+        .imagez{
+            display: flex;
+            gap: 10px;
+            width: calc(50% - 5px);
+        }
+        @media (max-width: 768px){
+            .imagez{
+                flex-direction: row;
+                align-items: center;
+            }
+            .imagez img {
+                width: 100%; /* Each image uses full width when stacked */
+            }
+        }
+        .choices {
+            list-style-type: lower-alpha; /* Removes default list numbering */
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;"><u>Diagnosing Faults</u></h2>
+        <div class="content">
+            <h1 style="text-align: center;">INTRODUCTION</h1>
+            <p>
+                In this lesson, we are looking at how we are going to diagnose faults that we may find in the computer systems. We may need to identify and isolate these issues especially when the hardware that is having a problem is hard to identify.
+            </p>
+            <p>
+                It is an <strong>essential skill</strong> especially when we are troubleshooting computers where the user does not know exactly what went wrong.
+            </p>
+        </div>
+        <h2 style="text-align: center;">Identifying and Isolating Faults</h2>
+            <div class="content">
+                <p>
+                    The following are the <strong>different ways to diagnose a computer system problem.</strong> Make sure to familiarize yourself with these as you will be making use of these when others would not work.
+                </p>
+                <ol>
+                    <li>
+                        <dt><strong>Power On Self Test (POST)</strong> </dt>
+                            <dd>
+                                This stands for Power On Self Test. After turning on the computer’s power, this will be the first screen that will appear before the operating system loads. The POST will display any problems found in the hardware that prevents the computer to boot or not operate in its full capacity during operation.
+                            </dd>
+                    </li>
+                    <li>
+                        <dt><strong>Operating System Load Time</strong> </dt>
+                            <dd>
+                                If the operating system takes to load than usual, there may be errors in the hard drive.
+                            </dd>
+                    </li>
+                    <li>
+                        <dt><strong>Graphic Problems </strong> </dt>
+                            <dd>
+                                Check whether the computer graphics are good after the operating system loads. Reduced graphics may indicate that there are hardware failures with the graphic cards.
+                            </dd>
+                    </li>
+                    <li>
+                        <dt><strong>Perform an auditory test </strong> </dt>
+                            <dd>
+                                <p>
+                                    Play a short audio clip. When the audio is lagging, it means that the processor is working at an elevated speed. It could also mean that there is no longer enough RAM to keep programs loading. 
+                                </p>
+                                <p>
+                                    Changing the startup sound is a great way to apply this test. Another issue associated with choppy sounds is PIO (Programmed Input/Output) Mode. 
+                                </p>
+                                <p>
+                                    This affects how the hard drive reads and writes data from a drive. Switching to DMA allows for faster reads and writes and can sometimes repair choppy audio.
+                                </p>
+                            </dd>
+                    </li>
+                    <li>
+                        <dt><strong>Check for newly installed hardware  </strong> </dt>
+                            <dd>
+                                <p>
+                                    Most operating system, especially Windows, can experience conflict with new drivers. However, Windows would usually notify you about drivers that may be causing the issue. This can be checked through Windows Device Manager.
+                                </p>
+                                <p>
+                                    <i>
+                                        Control Panel > Click System Icon > Click Hardware Tab > Click on Device Manager
+                                    </i>
+                                </p>
+                                <p>
+                                    Use this to check and arrange hardware properties.
+                                </p>
+                            </dd>
+                    </li>
+                    <li>
+                        <dt><strong>Check for newly installed software </strong> </dt>
+                            <dd>
+                                <p>
+                                    New software requires more resources than the system provides. If problem occurs after the software starts, it is most likely caused by the software.
+                                </p>
+                               
+                            </dd>
+                    </li>
+                    <li>
+                        <dt><strong>Check RAM and CPU consumption </strong> </dt>
+                            <dd>
+                                <p>
+                                    This is the most common cause of why a computer lag. Check the computer’s Task Manager, click 
+                                </p>
+                               
+                            </dd>
+                    </li>
+                    <li>
+                        <dt><strong>Check if hard drive is making scratching or making loud noises</strong> </dt>
+                            <dd>
+                                <p>
+                                    Should this occur, turn off the computer and diagnose the harddrive. If the CPU fan comes off at high speed when the CPU is working hard, it means that the computer is working hard beyond its capacity. 
+                                </p>
+                               
+                            </dd>
+                    </li>
+                    <li>
+                        <dt><strong>Run a virus and malware scan. </strong> </dt>
+                            <dd>
+                                <p>
+                                    Third party software applications can be used.
+                                </p>
+                               
+                            </dd>
+                    </li>
+                    <li>
+                        <dt><strong>Check problems while running safe mode.  </strong> </dt>
+                            <dd>
+                                <p>
+                                    Safe mode can be activated by repeatedly tapping F8 during POST. If the issue still occurs even while still in safe mode, then it is an issue of the operating system.
+                                </p>
+                               
+                            </dd>
+                    </li>
+                </ol>
+            </div>
+        <h2 style="text-align: center;">Troubleshooting Network Connection Problems</h2>
+            <div class="content">
+                <ol>
+                    <caption><i>To try <strong>troubleshooting a network connection problem</strong>, try these steps:</i></caption>
+                    <li>From the notification area, right click the network icon to open Troubleshoot Problems. Click Diagnose and Repair.</li>
+                    <li>Make sure that all cables are properly connected.</li>
+                    <li>If trying to connect to another computer, make sure that the computer is turned on and that file and printer sharing is enabled on the network. </li>
+                    <li>If the problem occurred after installing the new software, check the connection settings if it has been changed. </li>
+                </ol>
+            </div>
+        <h2 style="text-align: center;">Basic Network Troubleshooting </h2>
+            <div class="content">
+                <p>
+                    Take note that there are <strong>various network configurations,</strong> operating systems, setup, etc. The following information may not apply to all networks or all operating systems.
+                </p>
+                <p style="border: 1px solid; width: 100%;"></p>
+                <p><strong>Verify that the network adapter is properly installed and detected by the computer with no conflicts. </strong></p>
+                <p>
+                    <strong>Open the Device Manager to verify if there are no errors.</strong> <i>“Network adapters”</i> should be present for each network adapter installed in the computer.
+                </p>
+                <p> If the network adapter is read as an “Other device”, it means that the network card was not properly installed in the computer.</p>
+                <p>
+                    <strong>Let the operating system re-detect and install the Network card</strong> by removing the network adapter and any other conflict devices from Device Manager and then reboot the computer. 
+                </p>
+                <p>
+                    If the operating system re-detects the card, but not the drivers, <strong>download the network adapter drivers from the computer manufacturer</strong> or the network card manufacturer.
+                </p>
+            </div>
+        <h2 style="text-align: center;">Verify Connections (Part 1)</h2>
+            <div class="content">
+                <dl>
+                    <dt><strong>Wired Network	</strong></dt>
+                    <dd>
+                        <p>
+                            Verify that the network cable is properly connected and make sure the LEDs next to the network jack are properly illuminated. 
+                        </p>
+                        <p>
+                            For example, a network card with a solid green LED light indicates that the card is connected and can receive the signal. If the green light is flashing, it means that data is being sent or received.  
+                        </p>
+                        <p>
+                            If there are no lights or the lights are orange or red the card may be bad, not connected properly, or that the card is not receiving a signal from the network. If you are on a small or local network and have the capability of checking a hub, switch, or router verify that the cables are properly connected and that it has power. 
+                        </p>
+                        <p>
+                            If after checking the connections the LED indicators appear bad, the network adapter, port, or cable may be defective.
+                        </p>
+                    </dd>
+                    <dt><strong>Wireless Network</strong></dt>
+                    <dd>
+                        <p>
+                            If you are using a device with a wireless network, like a laptop, make sure that the device has a Wi-Fi button, and it is turned on. If the button is turned on, make sure that your device is connected to the network. The correct password must be entered when connecting to protected WiFi networks. 
+                        </p>
+                    </dd>
+                    <dt><strong>Adapter functionality</strong></dt>
+                    <dd>
+                        <p>
+                            Verify that the network card can ping itself using the ping command. Users can ping the computer from a Windows command line. Unix and Linux users can pung from the shell. Ping the card or the localhost, type either: 
+                        </p>
+                        <p>
+                            ping 127.0.0.1 or ping localhost
+                        </p>
+                        <p>
+                            Typing either will get replies from the network card. If an error occurs and the transmission fails, it means that the network card was not properly installed to the computer, has incorrect drivers, or the card itself is bad. 
+                        </p>
+                    </dd>
+                </dl>
+                <h4>Connect to the router.</h4>
+                <ol>
+                    <caption>After checking the steps and that your network has a router, check if your computer can connect to the router by following these steps:</caption>
+                    <li><strong>Determine the routers address</strong> – Use the ipconfig command (or ifconfig command for Linux), determine the router’s address by looking at the Gateway address.</li>
+                    <li><strong>Open the Windows command line.</strong></li>
+                    <li>
+                        <strong>From the command prompt type ipconfig and press enter. </strong>
+                        <p>
+                            Ethernet adapter Local Area Connection: Connection-specific DNS Suffix . : computerhope.com. IP Address. . . . . . . . . . . . : 192.168.1.103 Subnet Mask . . . . . . . . . . . : 255.255.255.0 Default Gateway . . . . . . . . . : 192.168.1.1
+                        </p>
+                        <p>
+                            <strong><i>The Default Gateway is the address of your router</i></strong>. The Default Gateway is the address of your router. 
+                        </p>
+                        <p>
+                            Most home routers have a gateway address that starts with 192.168 like the address shown above. 
+                        </p>
+                        <p>
+                            Assuming your gateway address is 192.168.1.1 attempt to ping the router to see if it can send and receive information by running the below command.
+                        </p>
+                        <p>
+                            ping 192.168.1.1
+                        </p>
+                    </li>
+                    <li>
+                        <ol class="choices">
+                            <caption><strong>If you get replies form the router, it means that the connection is good, and you can skip to the next step.</strong> If there are no replies, it means that the router was not set up correctly. Reset the router to make sure that it is not a problem with the router. Reset the router by following these steps:</caption>
+                            <li>Turn off the computer and leave it off for a few minutes.</li>
+                            <li>Unplug the power to your router and cable modem or DSL modem.</li>
+                            <li>Leave the power cables disconnected for 1- to 15 seconds then plug in the modem and router again.</li>
+                            <li>Finally, turn the computer again and repeat this step to see if the router can be pinged.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <strong>If the router cannot still be pinged, turn the computer off again and connect the computer to the router using cables instead of the wireless option.</strong> If it still does not work, contact the router manufacturer for additional support or replacement.
+                    </li>
+                </ol>
+                <h4>Firewall</h4>
+                    <p>
+                        If possible, disable the firewall to make sure that the firewall is not causing network problems. If the computer still utilizes the firewall, make sure that the required ports are open especially the HTTP port.
+                    </p>
+                <h4>Internet is not working.</h4>
+                    <p>If you are still able to ping the router, but you still cannot connect to the Internet, it’s either the router is improperly configured, or the ISP is having issues.</p>
+                    <ol class="choices">
+                        <caption>If the Internet has been working properly, but suddenly stopped working, give it a few minutes to make sure that it is not a temporary outage. If the problem is not yet addressed after a few minutes, follow these steps:</caption>
+                        <li>If the Internet has been working properly, but suddenly stopped working, give it a few minutes to make sure that it is not a temporary outage. If the problem is not yet addressed after a few minutes, follow these steps:</li>
+                        <li>Unplug the power to your router and cable modem or DSL modem.</li>
+                        <li>Leave the power cables disconnected for 1- to 15 seconds then plug in the modem and router again.</li>
+                        <li>Finally, turn the computer again and repeat this step to see if the router can be pinged.</li>
+                    </ol>
+                    <p>
+                        If after following the above steps the Internet is still not working, open the Windows command line and run the below command.
+                    </p>
+                    <p>
+                        ping google.com
+                    </p>
+                    <p>
+                        Running the command will get a reply from Google. If you get a reply, this means that the computer is working, if not, there may be a problem with the Internet browser because your router or modem is not reaching the Internet. 
+                    </p>
+                    <p>
+                        Try using other browsers such as Internet Explorer or Mozilla Firefox. If you have a router, make sure that DHCP is enabled and that the WAN or Gateway address is the proper ISP address.
+                    </p>
+                    <p>
+                        If problems still occur, contact the ISP to make sure that the problem is not on their end and if they could assist you to other special configurations.
+                    </p>
+                <h4>Additional troubleshooting   </h4>
+                    <p>
+                        Another method of determining network issues is to use the tracert command. It is the command prompt command that is used to show several details about the path that a packet takes from the computer or device you are on to whatever destination you specify. 
+                    </p>
+                    <p>
+                        It gives an overview of each device a packet travels over a network and gives an idea where a problem exists in or outside your network.
+                    </p>
+                    <p>
+                        To use this command, you must be at the command line and type one of the below commands depending on your operating system.
+                    </p>
+                    <p>
+                        tracert google.com <br>
+                        or <br>
+                        traceroute google.com
+                    </p>
+                    <p>
+                        If run successfully you should begin to see each hop between the computer and network devices. When the connection fails, determine what device is causing the issue by reviewing the traceroute listing.
+                    </p>
+            </div>
+    </div>   
+</body>
+</html>
